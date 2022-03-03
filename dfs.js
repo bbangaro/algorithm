@@ -1,8 +1,9 @@
-// DFS (Depth First Search, Stack)
+// DFS (Depth First Search, Stack) 스택 자료구조
 const solution = function (numbers, target) {
     let answer = 0;
 
     function dfs(depth, sum) {
+        console.log(depth);
         if (depth === numbers.length) {
             // 깊이가 숫자 길이와 같으면
             if (sum === target) {
